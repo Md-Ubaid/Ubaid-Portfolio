@@ -1,24 +1,379 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Mohammad Ubaid</div>
-      <style>
-        .logo {
-          font-family: 'Orbitron', sans-serif;
-    font-weight: 700;
-        }
-      </style>
-      <div>
-        <ul class="nav-links">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohammad Ubaid - Data Science Student | Python Developer | ML Engineer</title>
+  <meta name="description"
+    content="Data Science student specializing in Machine Learning and Python development. Building data-driven solutions with 4+ certifications from Harvard CS50, ISRO, and hands-on ML projects." />
+  <meta name="keywords"
+    content="Data Science, Machine Learning, Python Developer, ML Engineer, Portfolio, Mohammad Ubaid, AI, Data Analysis" />
+  <meta name="author" content="Mohammad Ubaid" />
+
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Mohammad Ubaid - Data Science Student | ML Engineer" />
+  <meta property="og:description"
+    content="Building data-driven solutions with Python and Machine Learning. View my projects and certifications." />
+  <meta property="og:url" content="https://ubaid-portfolio-iota.vercel.app" />
+  <meta property="og:image" content="https://ubaid-portfolio-iota.vercel.app/Assets/profile.png" />
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mohammad Ubaid - Data Science Student" />
+  <meta name="twitter:description" content="Building data-driven solutions with Python and Machine Learning" />
+  <meta name="twitter:image" content="https://ubaid-portfolio-iota.vercel.app/Assets/profile.png" />
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Mohammad Ubaid</div>
+    <style>
+      .logo {
+        font-family: 'Orbitron', sans-serif;
+        font-weight: 700;
+      }
+    </style>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Mohammad Ubaid</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#certifications" onclick="toggleMenu()">Certifications</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./Assets/profile.png" alt="Mohammad Ubaid profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">👋Hello, I'm</p>
+      <h1 class="title">Mohammad Ubaid</h1>
+      <p class="section__text__p2">Data Science Student | Python Developer | ML Engineer</p>
+      <p class="section__text__p3">Building data-driven solutions with Python and Machine Learning</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./Assets/resume.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./Assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/md-ubaid'" />
+        <img src="./Assets/github.png" alt="My Github profile" class="icon"
+          onclick="location.href='https://github.com/Md-Ubaid'" />
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="about-details-container">
+        <div class="about-unified-card">
+          <div class="about-header">
+            <div class="about-header-item">
+              <img src="./Assets/education.png" alt="Education icon" class="icon" />
+              <div>
+                <h3>Education</h3>
+                <p>B.Tech in Computer Science<br />(Data Science Specialization)</p>
+              </div>
+            </div>
+            <div class="about-header-item">
+              <img src="./Assets/cert-icon.png" alt="Certifications icon" class="icon" />
+              <div>
+                <h3>Certifications</h3>
+                <p>4+ Professional<br />Certifications Completed</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-content">
+            <p class="about-intro">
+              <strong>3rd-year B.Tech student specializing in Data Science</strong> with hands-on experience
+              building machine learning models and data pipelines.
+            </p>
+
+            <div class="about-grid">
+              <div class="about-section">
+                <h4>🎓 Education & Certifications</h4>
+                <ul>
+                  <li>Completed <strong>4+ professional certifications</strong> from Harvard CS50, ISRO, and Udemy</li>
+                  <li>Specialized in Data Science and Machine Learning</li>
+                </ul>
+              </div>
+
+              <div class="about-section">
+                <h4>💻 Key Projects</h4>
+                <ul>
+                  <li><strong>HealthVision</strong> - Medical diagnosis tool using ML</li>
+                  <li><strong>Heart Disease Prediction</strong> - Achieved <strong>85% accuracy</strong></li>
+                </ul>
+              </div>
+
+              <div class="about-section">
+                <h4>🛠️ Technical Skills</h4>
+                <ul>
+                  <li>Proficient in <strong>Python, SQL</strong>, and data science libraries</li>
+                  <li>Experience with <strong>Pandas, NumPy, Scikit-learn</strong></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./Assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Technical Skills</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Programming Languages</h2>
+          <div class="article-container">
+            <article>
+              <img src="./Assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Python</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./Assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>MySQL</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./Assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>JavaScript</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./Assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Git & GitHub</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Data Science & ML</h2>
+          <div class="article-container">
+            <article>
+              <img src="./Assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Scikit-learn</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./Assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Pandas</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./Assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Matplotlib</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./Assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Numpy</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./Assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+  <section id="certifications">
+    <h2 class="title">Certifications</h2>
+    <div class="carousel-container">
+      <button class="carousel-btn prev-btn" onclick="scrollCertifications(-1)">
+        <span>‹</span>
+      </button>
+      <div class="certification-carousel">
+        <div class="certification-card">
+          <img src="./Assets/cert-icon.png" alt="Certification Logo">
+          <h3>CS50’s Introduction to Programming with Python</h3>
+          <p>CS50’s</p>
+          <a href="https://certificates.cs50.io/5c8cb19f-4301-452c-a29e-4955e6b66af2.pdf?size=letter" target="_blank"
+            class="certification-link">View Certificate</a>
+        </div>
+        <div class="certification-card">
+          <img src="./Assets/cert-icon.png" alt="Certification Logo">
+          <h3>Python Bootcamp</h3>
+          <p>Udemy</p>
+          <a href="https://ude.my/UC-e7db2679-8b8b-4166-982c-cab2b6e0095b" target="_blank"
+            class="certification-link">View
+            Certificate</a>
+        </div>
+        <div class="certification-card">
+          <img src="./Assets/cert-icon.png" alt="Certification Logo">
+          <h3>AI/ML for Geodata Analysis</h3>
+          <p>Indian Institute of Remote Sensing (IIRS), ISRO</p>
+          <a href="https://elearning.iirs.gov.in/edusat_lms/public/studentCertificate/MjAyNDE0NDI1NTExMTM=/MTQ0"
+            target="_blank" class="certification-link">View Certificate</a>
+        </div>
+        <div class="certification-card">
+          <img src="./Assets/cert-icon.png" alt="Certification Logo">
+          <h3>Introduction to Data Science</h3>
+          <p>Infosys Springboard</p>
+          <a href="https://infyspringboard.onwingspan.com/public-Assets/infosysheadstart/cert/lex_12666306402263577000_shared/1-74f9ad78-f9d0-4bbb-8806-73b4fdbc98cb.pdf"
+            target="_blank" class="certification-link">View Certificate</a>
+        </div>
+      </div>
+      <button class="carousel-btn next-btn" onclick="scrollCertifications(1)">
+        <span>›</span>
+      </button>
+    </div>
+  </section>
+
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./Assets/healthvision.jpeg" alt="HealthVision - Medical Diagnosis Tool" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">HealthVision</h2>
+          <p class="project-description">AI-powered medical diagnosis tool using machine learning to predict potential
+            health conditions. Built with Python and modern ML frameworks for accurate disease detection.</p>
+          <div class="tech-stack">
+            <span class="tech-badge">Python</span>
+            <span class="tech-badge">Machine Learning</span>
+            <span class="tech-badge">Scikit-learn</span>
+          </div>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Md-Ubaid'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://healthvision-delta.vercel.app'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./Assets/project-2.png" alt="Heart Disease Prediction System" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Heart Disease Prediction</h2>
+          <p class="project-description">Machine learning classification model achieving <strong>85% accuracy</strong>
+            in predicting heart disease presence. Implements Random Forest and Logistic Regression with comprehensive
+            EDA and feature importance analysis.</p>
+          <div class="tech-stack">
+            <span class="tech-badge">Python</span>
+            <span class="tech-badge">Random Forest</span>
+            <span class="tech-badge">Pandas</span>
+            <span class="tech-badge">Matplotlib</span>
+          </div>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/Md-Ubaid/Heart_Disease_Prediction_Classification'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/Md-Ubaid/Heart_Disease_Prediction_Classification'">
+              View Project
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./Assets/project-3.png" alt="Notify - Virtual Learning Companion" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Notify - Learning Companion</h2>
+          <p class="project-description">All-in-one virtual learning workspace with in-app browser, interactive
+            flashcards, mind mapping, and adaptive quizzes. Developed during HTS 2.0 hackathon to enhance student
+            productivity.</p>
+          <div class="tech-stack">
+            <span class="tech-badge">React</span>
+            <span class="tech-badge">JavaScript</span>
+            <span class="tech-badge">Web Development</span>
+          </div>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/Md-Ubaid/HTS2.0_team-hash'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/Md-Ubaid/HTS2.0_team-hash'">
+              View Project
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./Assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <p class="contact-subtitle">Open to Data Science internships and entry-level positions</p>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./Assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:mdubaid.prsn@gmail.com">mdubaid.prsn@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./Assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/md-ubaid">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Mohammad Ubaid</h3>
+        <p>Data Science Student | Python Developer | ML Engineer</p>
+        <p class="footer-tagline">Building data-driven solutions with Python and Machine Learning</p>
+      </div>
+
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#certifications">Certifications</a></li>
@@ -26,374 +381,28 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Mohammad Ubaid</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#certifications" onclick="toggleMenu()">Certifications</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+
+      <div class="footer-section">
+        <h4>Connect</h4>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/md-ubaid" target="_blank" aria-label="LinkedIn">
+            <img src="./Assets/linkedin.png" alt="LinkedIn" class="footer-icon" />
+          </a>
+          <a href="https://github.com/md-ubaid" target="_blank" aria-label="GitHub">
+            <img src="./Assets/github.png" alt="GitHub" class="footer-icon" />
+          </a>
+          <a href="mailto:mdubaid.prsn@gmail.com" aria-label="Email">
+            <img src="./Assets/email.png" alt="Email" class="footer-icon" />
+          </a>
         </div>
       </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./Assets/profile.png" alt="Mohammad Ubaid profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">👋Hello, I'm</p>
-        <h1 class="title">Mohammad Ubaid</h1>
-        <p class="section__text__p2">Data Science Enthusiast</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./Assets/resume.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./Assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/md-ubaid'"
-          />
-          <img
-            src="./Assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/Md-Ubaid'"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./Assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>Learning<br />Data Science/AI/ML</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./Assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>Higher Education<br />B.Tech Computer Science(Data Science)</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              I'm Mohammad Ubaid, deeply passionate about data science, machine learning, 
-              and computer science. My journey in technology is fueled by a profound 
-              fascination with artificial intelligence and its potential to revolutionize 
-              industries and society.
-            </p>
-            <p>
-              As an aspiring data scientist, I'm constantly refining my skills in 
-              data analysis, machine learning algorithms, and solving complex computational 
-              problems. Through both academic pursuits and personal projects, I've gained 
-              hands-on experience with various tools and technologies, enabling me to derive 
-              meaningful insights from data.
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./Assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Currently Learning</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./Assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Python</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./Assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>MySQL</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./Assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./Assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>GUI</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Data Analysis Tools</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./Assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Scikit-learn</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./Assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Pandas</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./Assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Matplotlib</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./Assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Numpy</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./Assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="certifications">
-      <h2 class="title">Certifications</h2>
-      <div class="certification-container">
-        <div class="certification-card">
-          <img src="./Assets/cert-icon.png" alt="Certification Logo">
-          <h3>CS50’s Introduction to Programming with Python</h3>
-          <p>CS50’s</p>
-          <a href="https://certificates.cs50.io/5c8cb19f-4301-452c-a29e-4955e6b66af2.pdf?size=letter" target="_blank" class="certification-link">View Certificate</a>
-        </div>
-        <div class="certification-card">
-          <img src="./Assets/cert-icon.png" alt="Certification Logo">
-          <h3>Python Bootcamp</h3>
-          <p>Udemy</p>
-          <a href="https://ude.my/UC-e7db2679-8b8b-4166-982c-cab2b6e0095b" target="_blank" class="certification-link">View Certificate</a>
-        </div>
-        <div class="certification-container">
-          <div class="certification-card">
-            <img src="./Assets/cert-icon.png" alt="Certification Logo">
-            <h3>AI/ML for Geodata Analysis</h3>
-            <p>Indian Institute of Remote Sensing (IIRS), Indian Space Research Organization (ISRO)</p>
-            <a href="https://elearning.iirs.gov.in/edusat_lms/public/studentCertificate/MjAyNDE0NDI1NTExMTM=/MTQ0" target="_blank" class="certification-link">View Certificate</a>
-          </div>
-          <div class="certification-container">
-            <div class="certification-card">
-              <img src="./Assets/cert-icon.png" alt="Certification Logo">
-              <h3>Introduction to Data Science</h3>
-              <p>Infosys Springboard</p>
-              <a href="https://infyspringboard.onwingspan.com/public-Assets/infosysheadstart/cert/lex_12666306402263577000_shared/1-74f9ad78-f9d0-4bbb-8806-73b4fdbc98cb.pdf" target="_blank" class="certification-link">View Certificate</a>
-            </div>
-      </div>
-    </section>
-    
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./Assets/healthvision.jpeg"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">HealthVision</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Md-Ubaid'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://healthvision-delta.vercel.app'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./Assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Two uploading soon...</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Md-Ubaid'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Md-Ubaid'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./Assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Three uploading soon...</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Md-Ubaid'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Md-Ubaid'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./Assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./Assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mdubaid.prsn@gmail.com">mdubaid.prsn@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./Assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/md-ubaid">LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2023 Mohammad Ubaid. All Rights Reserved.</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Mohammad Ubaid. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
 </html>

@@ -803,6 +803,9 @@ fetch('content.json')
       `;
       certsContainer.innerHTML = certsHtml;
     }
+
+    // Render Projects
+    const container = document.getElementById('projectsContainer');
     if (data.projects) {
       data.projects.forEach(proj => {
         const featured = proj.featured ? 'style="border:2px solid var(--accent)"' : '';

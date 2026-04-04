@@ -1,0 +1,162 @@
+{
+  "hero": {
+    "name": "Mohammad Ubaid",
+    "roles": ["Data Science Student", "Python Developer", "Machine Learning Enthusiast"],
+    "profileImage": "Assets/profile.png",
+    "buttons": [
+      {
+        "text": "Download CV",
+        "href": "Assets/resume.pdf",
+        "type": "primary",
+        "download": true
+      },
+      {
+        "text": "Contact Info",
+        "href": "#contact",
+        "type": "secondary"
+      }
+    ]
+  },
+  "socials": [
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/md-ubaid",
+      "icon": "linkedin"
+    },
+    {
+      "name": "GitHub",
+      "url": "https://github.com/Md-Ubaid",
+      "icon": "github"
+    }
+  ],
+  "experience": [
+    {
+      "badge": "Current Role",
+      "dateRange": "Jan 2024 - Present",
+      "title": "Data Science Intern",
+      "company": "Shyara Tech Solutions (OPC) Pvt. Ltd.",
+      "location": "Remote",
+      "tags": ["Machine Learning", "Data Science", "Python"],
+      "responsibilities": [
+        "Worked on analyzing <strong>financial and business datasets</strong> to extract meaningful insights and support <strong>data-driven decision-making</strong>",
+        "Built <strong>AI-driven automation tools</strong> to streamline data workflows",
+        "created <strong>data visualizations</strong> to communicate insights and support <strong>business decision-making</strong>."
+      ],
+      "techStack": ["Python", "SQL", "Git", "Tableau"]
+    }
+  ],
+  "projects": [
+    {
+      "title": "HealthVision",
+      "description": "AI-powered medical diagnosis tool using ML to predict potential health conditions. Built with Python and modern ML frameworks for accurate disease detection.",
+      "label": "Healthcare Assistant on Your Fingertips",
+      "tags": ["Python", "Scikit-learn", "React"],
+      "image": "Assets/healthvision.jpeg",
+      "gradient": "linear-gradient(135deg,#180833,#5c1eff)",
+      "featured": true,
+      "buttons": [
+        {
+          "text": "Github",
+          "href": "https://github.com/Md-Ubaid",
+          "type": "secondary"
+        },
+        {
+          "text": "Live Demo",
+          "href": "https://healthvision-delta.vercel.app",
+          "type": "primary"
+        }
+      ]
+    },
+    {
+      "title": "Heart Disease Prediction",
+      "description": "ML classification model achieving <strong>85% accuracy</strong>. Implements Random Forest & Logistic Regression with comprehensive EDA and feature importance analysis.",
+      "label": "Heart Disease Prediction",
+      "tags": ["Python", "Scikit-learn", "React"],
+      "emoji": "❤️",
+      "gradient": "linear-gradient(135deg,#1a0800,#c03000)",
+      "featured": false,
+      "buttons": [
+        {
+          "text": "Github",
+          "href": "https://github.com/Md-Ubaid/Heart_Disease_Prediction_Classification",
+          "type": "secondary"
+        },
+        {
+          "text": "Live Demo",
+          "href": "https://github.com/Md-Ubaid/Heart_Disease_Prediction_Classification",
+          "type": "primary"
+        }
+      ]
+    },
+    {
+      "title": "Notify — Learning Companion",
+      "description": "All-in-one virtual learning workspace with flashcards, mind mapping, and adaptive quizzes. Built at HTS 2.0 hackathon to enhance student productivity.",
+      "label": "Notify — Learning Companion",
+      "tags": ["Python", "React", "JavaScript"],
+      "emoji": "📚",
+      "gradient": "linear-gradient(135deg,#001a10,#007a45)",
+      "featured": false,
+      "buttons": [
+        {
+          "text": "Github",
+          "href": "https://github.com/Md-Ubaid/HTS2.0_team-hash",
+          "type": "secondary"
+        },
+        {
+          "text": "Live Demo",
+          "href": "https://github.com/Md-Ubaid/HTS2.0_team-hash",
+          "type": "primary"
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "mlDataScience": [
+      { "name": "TensorFlow", "percentage": 50 },
+      { "name": "Pandas", "percentage": 70 },
+      { "name": "Scikit-learn", "percentage": 50 },
+      { "name": "NumPy", "percentage": 80 }
+    ],
+    "languagesTools": [
+      { "name": "Python", "percentage": 80 },
+      { "name": "Matplotlib", "percentage": 70 },
+      { "name": "MySQL", "percentage": 75 },
+      { "name": "Git & GitHub", "percentage": 75 }
+    ]
+  },
+  "certifications": [
+    {
+      "name": "CS50's Introduction to Programming with Python",
+      "issuer": "Harvard University — CS50",
+      "link": "https://certificates.cs50.io/5c8cb19f-4301-452c-a29e-4955e6b66af2.pdf?size=letter"
+    },
+    {
+      "name": "Python Bootcamp",
+      "issuer": "Udemy",
+      "link": "https://ude.my/UC-e7db2679-8b8b-4166-982c-cab2b6e0095b"
+    },
+    {
+      "name": "AI/ML for Geodata Analysis",
+      "issuer": "ISRO — IIRS",
+      "link": "https://elearning.iirs.gov.in/edusat_lms/public/studentCertificate/MjAyNDE0NDI1NTExMTM=/MTQ0"
+    },
+    {
+      "name": "Introduction to Data Science",
+      "issuer": "Infosys Springboard",
+      "link": "https://infyspringboard.onwingspan.com/public-Assets/infosysheadstart/cert/lex_12666306402263577000_shared/1-74f9ad78-f9d0-4bbb-8806-73b4fdbc98cb.pdf"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Jaypee University of Engineering & Technology",
+      "degree": "Bachelor of Technology",
+      "duration": "2024 – Present",
+      "cgpa": "9.89",
+      "specialization": "Computer Science & Engineering – Data Science Specialization"
+    }
+  ],
+  "contact": {
+    "email": "mdubaid.prsn@gmail.com",
+    "message": "Let's collaborate! I'm available for internships, projects, and opportunities. Response time: usually 24 hours"
+  }
+}
